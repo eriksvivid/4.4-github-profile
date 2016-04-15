@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 4 github profile</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row header">
+        <div class="col-md-12 header-div">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search GitHub" style="height: 30px; width: 400px;">
+            </div>
+          </form>
+          <ul class="header-nav-items">
+            <li>Pull Requests</li>
+            <li>Issues</li>
+            <li>Gist</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-3 user-side">
+          <div class="user"></div>
+        </div>
+
+        <div class="col-md-8 repo-side">
+          <ul class="nav nav-tabs">
+            <li role="presentation"><a href="#">Contributions</a></li>
+            <li role="presentation" class="active"><a href="#">Repositories</a></li>
+            <li role="presentation"><a href="#">Public activity</a></li>
+          </ul>
+          <form class="form-inline">
+            <input type="text" class="form-control" id="search" placeholder="Find a repository...">
+            <button type="submit" class="btn btn-default">Search</button>
+            <a href="" class="link">All</a>
+            <a href="" class="link">Public</a>
+            <a href="" class="link">Private</a>
+            <a href="" class="link">Sources</a>
+            <a href="" class="link">Forks</a>
+            <a href="" class="link">Mirrors</a>
+          </form>
+          <div class="repositories"></div>
+        </div>
+      </div>
+    </div>
+
+    <script id="repo-tab" type="text/x-handlebars-template">
+
+        <div class="repo">
+          <a ref="{{repoUrl}}">{{repoName}}</a>
+        </div>
+        <div class="updated-time">{{updated}}</div>
+
+    </script>
+
+    <script id="user-profile" type="text/x-handlebars-template">
+
+          <img src="{{avatar}}" alt="" height="230" width="230">
+          <h2 class="name">{{name}}</h2>
+          <h3 class="login">{{login}}</h3>
+
+        <div class="join">{{joined}}</div>
+        <!-- <div class="follow"> -->
+          <div class="follow">
+            <h4>
+              <a href="{{followersUrl}}" class="">{{followers}}</a>
+            </h4>
+            <h5>Followers</h5>
+          </div>
+          <div class"follow">
+            <h4>
+              <a href="{{followingUrl}}" class="">{{following}}</a>
+            </h4>
+            <h5>Following</h5>
+          </div>
+        <!-- </div> -->
+        <div><img src="{{organizations}}" alt=""></div>
+
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

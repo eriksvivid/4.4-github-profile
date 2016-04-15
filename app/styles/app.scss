@@ -1,0 +1,94 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+///////header///////
+.header {
+  margin-bottom: 20px;
+}
+
+.header-div {
+  background-color: rgb(240, 240, 240);
+  height: 40px;
+  border: 1px solid rgb(210, 210, 210);
+  // display: inline-block;
+}
+
+.navbar-form {
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.header-nav-items {
+  list-style-type: none;
+  display: inline;
+  margin-top: 10px;
+}
+
+.header-nav-items li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+}
+//////////////////
+
+//////////////////
+.follow {
+  display: inline-block;
+}
+
+.followers {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.following {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.repo {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.nav {
+  margin-bottom: 10px;
+}
+
+.form-inline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+
+}
+
+#search {
+  width: 250px;
+}
+
+.link {
+  padding-left: 10px;
+}
+
+.updated-time {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding-bottom: 30px;
+}
